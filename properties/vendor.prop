@@ -338,3 +338,15 @@ ro.hardware.wlan.chip=6750
 ro.hardware.wlan.dbs=0
 ro.hardware.wlan.mimo=1
 ro.hardware.wlan.vendor=qcom
+
+# Fling
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+ro.max.fling_velocity=20000 
+ro.vendor.qti.cgroup_follow.enable=true 
+persist.vendor.qti.inputopts.enable=true 
+persist.vendor.qti.inputopts.movetouchslop=0.6 
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
+
+# Zygote
+zygote.critical_window.minute=10
