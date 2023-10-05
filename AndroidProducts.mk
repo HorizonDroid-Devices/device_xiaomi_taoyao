@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_taoyao.mk
+    $(LOCAL_DIR)/lineage_taoyao.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_taoyao-user \
-    voltage_taoyao-userdebug \
-    voltage_taoyao-eng
+    lineage_taoyao-user \
+    lineage_taoyao-userdebug \
+    lineage_taoyao-eng

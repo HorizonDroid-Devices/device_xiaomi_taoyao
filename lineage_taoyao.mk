@@ -12,16 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/taoyao/device.mk)
 
 # Inherit some common PixelOS stuff
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1920
 
 # Official-ify
-VOLTAGE_BUILD_TYPE := OFFICIAL
+lineage_BUILD_TYPE := OFFICIAL
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := taoyao
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := voltage_taoyao
+PRODUCT_NAME := lineage_taoyao
 PRODUCT_MODEL := Xiaomi 12 Lite
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
