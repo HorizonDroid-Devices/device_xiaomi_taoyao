@@ -7,6 +7,7 @@ suspend.max_sleep_time_millis=40000
 vendor.bluetooth.soc=hastings
 
 # Camera
+ro.miui.notch=1
 ro.product.mod_device=taoyao_global
 
 # Charger
