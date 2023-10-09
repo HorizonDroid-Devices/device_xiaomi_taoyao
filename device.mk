@@ -365,7 +365,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc_snxxx@1.2-service \
     com.android.nfc_extras \
     libchrome.vendor \
-    TaoyaoNfcOverlay \
     NfcNci \
     SecureElement \
     Tag \
@@ -387,7 +386,11 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    TaoyaoGLSettingsProviderOverlay \
+    CarrierConfigOverlay \
+    TaoyaoNfcOverlay \
+    TaoyaoSettingsProviderOverlay \
+    TaoyaoWifiOverlay \
+    WifiOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -417,7 +420,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
     libjson \
     librmnetctl
 
@@ -527,8 +529,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
-    TaoyaoGLWifiOverlay \
-    WifiOverlay \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
