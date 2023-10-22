@@ -41,5 +41,11 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // Pocket
         PocketService.startService(context);
-    }
+
+	// SharedPreferences
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+
+        boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false);
+            FileUtils.writeLine(DC_DIMMING_NODE, dcDimmingEnabled ? "1" : "0");
+	}
 }
