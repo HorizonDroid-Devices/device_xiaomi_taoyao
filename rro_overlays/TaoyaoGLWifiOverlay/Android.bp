@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "LisaINSettingsProviderOverlay",
+    name: "TaoyaoGLWifiOverlay",
     vendor: true
 }

@@ -80,12 +80,10 @@ void vendor_load_properties() {
     // Detect variant and override properties
     string region = GetProperty("ro.boot.hwc", "");
 
-    if (region == "CN") { // China
-        set_device_props("2107119DC", "lisa", "Mi 11 LE");
-    } else if (region == "IN") { // India
-        set_device_props("2109119DI", "lisa_in", "Xiaomi 11 Lite NE");
-    } else { // Global
-        set_device_props("2109119DG", "lisa_global", "Xiaomi 11 Lite 5G NE");
+    if (region == "IN") { // India
+        set_device_props("2203129C", "taoyao", "Xiaomi 12 Lite");
+    }  else { // Global
+        set_device_props("2203129G", "taoyao_global", "Xiaomi 12 Lite");
     }
 
     // Set hardware revision

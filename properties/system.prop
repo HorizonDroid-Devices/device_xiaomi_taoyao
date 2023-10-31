@@ -7,7 +7,7 @@ suspend.max_sleep_time_millis=40000
 vendor.bluetooth.soc=hastings
 
 # Camera
-ro.product.mod_device=lisa_global
+ro.product.mod_device=taoyao_global
 
 # Charger
 ro.charger.enable_suspend=true

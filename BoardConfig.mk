@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/lisa
+DEVICE_PATH := device/xiaomi/taoyao
 
 BOARD_VENDOR := xiaomi
 
@@ -50,7 +50,7 @@ AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 
 # Board
-TARGET_BOOTLOADER_BOARD_NAME := lisa
+TARGET_BOOTLOADER_BOARD_NAME := taoyao
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -83,8 +83,8 @@ DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/hidl/manifest_xiaomi.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lisa
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lisa
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_taoyao
+TARGET_RECOVERY_DEVICE_MODULES := libinit_taoyao
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -106,8 +106,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) \
 			--kernel_offset $(BOARD_KERNEL_OFFSET) \
 			--dtb_offset $(BOARD_DTB_OFFSET)
 
-TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
-TARGET_KERNEL_CONFIG := lisa_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/taoyao
+TARGET_KERNEL_CONFIG := taoyao_defconfig
 TARGET_KERNEL_CLANG_VERSION := trb_clang
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(TARGET_KERNEL_CLANG_PATH)/bin/aarch64-linux-gnu-
@@ -138,7 +138,7 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 TARGET_USES_NQ_NFC := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := lisa,lisa_in,lisa_global
+TARGET_OTA_ASSERT_DEVICE := taoyao, taoyao_global
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -255,4 +255,4 @@ CONFIG_ACS := true
 CONFIG_IEEE80211AX := true
 
 # Inherit proprietary blobs
--include vendor/xiaomi/lisa/BoardConfigVendor.mk
+-include vendor/xiaomi/taoyao/BoardConfigVendor.mk

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_lisa.mk
+    $(LOCAL_DIR)/voltage_taoyao.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_lisa-user \
-    voltage_lisa-userdebug \
-    voltage_lisa-eng
+    voltage_taoyao-user \
+    voltage_taoyao-userdebug \
+    voltage_taoyao-eng
