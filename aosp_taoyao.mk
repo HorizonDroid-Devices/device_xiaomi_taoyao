@@ -11,17 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from taoyao device
 $(call inherit-product, device/xiaomi/taoyao/device.mk)
 
-# Inherit some common PixelOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1920
-
-# Official-ify
-lineage_BUILD_TYPE := OFFICIAL
+# Inherit some common HorizonDroidOS stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_CALL_RECORDING_SUPPORTED := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+CUSTOM_BUILD_TYPE := Official
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := taoyao
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_taoyao
+PRODUCT_NAME := aosp_taoyao
 PRODUCT_MODEL := Xiaomi 12 Lite
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

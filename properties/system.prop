@@ -73,3 +73,6 @@ persist.sys.fflag.override.settings_provider_model=false
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
+
+# Maintainer
+ro.horizon.maintainer=SMGReborn
